@@ -99,6 +99,10 @@
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
   </gap:config-file>
+  
+	<feature name="InAppBrowser">
+		<param name="ios-package" value="CDVInAppBrowser" />
+	</feature>
 
   <access origin="http://aoreiaclub.aoreia.com" />       
   <access origin="http://aoreiaclub.aoreia.com" subdomains="true" /> 
