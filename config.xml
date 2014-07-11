@@ -38,7 +38,7 @@
   <!-- only ios -->
   
   
-  <preference name="stay-in-webview" value="true" /> 
+  <preference name="stay-in-webview" value="false" /> 
  
   <!-- Define app icon for each platform. -->
   <icon src="resources/image/logo-Aoreia-120.png"/>
@@ -105,7 +105,7 @@
 	</feature>
 
   <access origin="http://aoreiaclub.aoreia.com" />       
-  <access origin="http://aoreiaclub.aoreia.com" subdomains="true" /> 
+  <access origin="http://aoreiaclub.aoreia.com" subdomains="true"  /> 
   <access origin="*"/>
   
   
