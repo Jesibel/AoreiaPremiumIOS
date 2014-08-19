@@ -40,7 +40,8 @@
   <!-- only ios -->
   
   
-  <preference name="stay-in-webview" value="false" /> 
+  <preference name="stay-in-webview" value="true" /> 
+  <preference name="DisallowOverscroll" value="true"/>
  
   <!-- Define app icon for each platform. -->
   <icon src="resources/image/logo-Aoreia-120.png"/>
@@ -79,32 +80,25 @@
   <gap:splash src="resources/image/logo_aoreia_1024-2.png" gap:platform="ios"     width="1024" height="768" />
 
 
-  <gap:plugin name="org.apache.cordova.media" />	
+   <gap:plugin name="org.apache.cordova.media" version="0.2.8"/>	
 
   <gap:plugin name="com.boyvanderlaak.cordova.plugin.orientationchanger" version="0.1.1" />
   
-  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.4" />
+  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
   
   <gap:plugin name="io.github.pwlin.cordova.plugins.fileopener" version="1.0.1" />
   
   <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
   
-  <gap:plugin name="org.apache.cordova.splashscreen" />
+  <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7"/>
   
-  <!--plugin name="InAppBillingPlugin" value="com.smartmobilesoftware.inappbilling.InAppBillingPlugin"/-->
- 
- 
- <!-- only ios -->
-  <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
+    <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
     <array>
       <string>UIInterfaceOrientationLandscapeLeft</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
   </gap:config-file>
   
-	<feature name="InAppBrowser">
-		<param name="ios-package" value="CDVInAppBrowser" />
-	</feature>
 
   <access origin="http://aoreiaclub.aoreia.com" />       
   <access origin="http://aoreiaclub.aoreia.com" subdomains="true"  /> 
