@@ -25,6 +25,10 @@
    <feature name="http://api.phonegap.com/1.0/media"/>
    <feature name="http://api.phonegap.com/1.0/file"/>
    <feature name="http://api.phonegap.com/1.0/notification"/>
+	
+   <feature name="InAppPurchase">
+       <param name="ios-package" value="InAppPurchase" />
+   </feature>
  
   <content src="index.html" />
   
@@ -97,7 +101,8 @@
   
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7"/>
   
-    <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
+  
+  <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
     <array>
       <string>UIInterfaceOrientationLandscapeLeft</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
